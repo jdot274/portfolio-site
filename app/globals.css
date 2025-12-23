@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #171717;
+  --bg-tertiary: #212121;
+  --bg-hover: #2f2f2f;
+  --text-primary: #ececec;
+  --text-secondary: #b4b4b4;
+  --text-muted: #666666;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --accent: #10a37f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-hover);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f3f;
+}
+
+/* Card hover effect */
+.app-card {
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.app-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Language colors */
+.lang-typescript { background: #3178c6; }
+.lang-javascript { background: #f7df1e; color: #000; }
+.lang-python { background: #3776ab; }
+.lang-swift { background: #f05138; }
+.lang-rust { background: #dea584; color: #000; }
+.lang-html { background: #e34f26; }
+.lang-css { background: #1572b6; }
+.lang-dart { background: #0175c2; }
+.lang-default { background: #666; }
